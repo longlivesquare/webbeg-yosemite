@@ -1,20 +1,173 @@
 
+@import url('https://fonts.googleapis.com/css?family=Jim+Nightshade|Open+Sans&display=swap');
+
 /* GLOBAL */
 * {
     padding: 0;
     margin: 0;
 }
 
+/* GRID SETUP */
+
 .grid {
-    dispaly: grid;
+    display: grid;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.hero {
+    grid-area: hero;
+}
+
+.preview1 {
+    grid-area: preview1;
+}
+
+.preview2 {
+    grid-area: preview2;
+}
+
+.article1 {
+    grid-area: article1;
+}
+
+.article2 {
+    grid-area: article2;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.page-container{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 600px 800px 900px 900px 60px;
+    grid-template-areas: "navbar navbar" "hero hero" "preview1 preview2" "article1 article1" "article2 article2" "footer footer";
+    justify-content: center;
 }
 
 /* NAVBAR */
+.navbar {
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: space-around;
+    height: 80px;
+    background-color: rgba(227,196,175,0.8);
+}
+
+.logo {
+    grid-column: 1 / span 1;
+    height: 90%;
+    margin-left: 10px;
+}
+
+.nav {
+    grid-column: 3 / span 1;
+    justify-self: flex-end;
+    align-self: flex-end;
+    list-style-type: none;
+}
+
+.navitem {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: -2px;
+    padding: 20px 5px 0 5px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-radius: 10px;
+}
+
+li.active {
+    background-color: #8B6C53;
+}
+
+.navitem:hover {
+    background-color: #91694D;
+}
 
 /* HERO */
+.hero {
+    background: url("../img/yos-valley-2.jpg") center center no-repeat;
+    margin-bottom: 30px;
+}
+
+.hero-txt {
+    height: 140px;
+    max-width: 500px;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 20%;
+    padding: 0 20px;
+    text-align: center;
+    color: #91694D;
+    border: 3px solid #91694D;
+    background-color: rgba(139,108,83, .6);
+    border-radius: 50%;
+}
+
+.hero-txt h1 {
+    margin-top: 17%;
+    font-family: 'Jim Nightshade', sans-serif;
+    align-self: center;
+}
 
 /* PREVIEW */
 
+.preview {
+    display: grid;
+    width: 70%;
+    justify-self: center;
+    border: 3px solid rgb(227,196,175);
+    border-radius: 9px;
+    padding: 10px;
+}
+
+.preview1 {
+    grid-column: 1 / span 1;
+}
+
+.preview img {
+    width: 100%;
+    justify-self: center;
+}
+
+.preview2 {
+    grid-column: 2 / span 1;
+}
+
 /* ARTICLE */
 
+.article1 {
+    margin-top: 20px;
+    background: url("../img/yos-half-dome.webp") center no-repeat;
+    background-attachment: fixed;
+}
+
+.article p {
+    margin: 10px;
+}
+
+.article2 {
+    background: url("../img/yos-el-cap.webp") center no-repeat;
+    background-attachment: fixed;
+}
+
+.article {
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    color: #f8f8f8;
+    text-shadow: 2px 2px #8B6C53;
+}
+
 /* FOOTER */
+
+.footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(227,196,175,0.8);
+}
