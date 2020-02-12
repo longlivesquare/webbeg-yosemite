@@ -46,6 +46,7 @@
     grid-template-rows: 80px 600px 800px 900px 900px 60px;
     grid-template-areas: "navbar navbar" "hero hero" "preview1 preview2" "article1 article1" "article2 article2" "footer footer";
     justify-content: center;
+    background-color: #f8f8f8;
 }
 
 /* NAVBAR */
@@ -74,10 +75,10 @@
     margin-right: 15px;
     margin-bottom: -2px;
     padding: 20px 5px 0 5px;
-    border-top: 2px solid black;
-    border-right: 2px solid black;
-    border-left: 2px solid black;
-    border-radius: 10px;
+    border-top: 2px solid #916900;
+    border-right: 2px solid #916900;
+    border-left: 2px solid #916900;
+    border-radius: 10px 10px 0 0;
 }
 
 li.active {
@@ -85,7 +86,7 @@ li.active {
 }
 
 .navitem:hover {
-    background-color: #91694D;
+    background-color: #916900;
 }
 
 /* HERO */
@@ -102,10 +103,13 @@ li.active {
     margin-bottom: 20%;
     padding: 0 20px;
     text-align: center;
-    color: #91694D;
-    border: 3px solid #91694D;
-    background-color: rgba(139,108,83, .6);
-    border-radius: 50%;
+    color: #916900;
+    border: 3px solid #916900;
+    /* background-color: rgba(139,108,83, .6); */
+    background-image: linear-gradient(rgba(240,240,240,0.8), rgba(139,108,83, .4));
+    /* border-radius: 50%; */
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
 }
 
 .hero-txt h1 {
@@ -131,6 +135,7 @@ li.active {
 
 .preview img {
     width: 100%;
+    height: 50%;
     justify-self: center;
 }
 
@@ -158,8 +163,8 @@ li.active {
 .article {
     grid-template-columns: 1fr 1fr;
     align-content: center;
-    color: #f8f8f8;
-    text-shadow: 2px 2px #8B6C53;
+    color: #8B6C00;
+    text-shadow: 1px -1px #f8f8f8;
 }
 
 /* FOOTER */
