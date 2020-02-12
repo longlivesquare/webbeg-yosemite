@@ -43,7 +43,8 @@
 
 .page-container{
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 80px 600px 800px 900px 900px 60px;
+    /* grid-template-rows: 80px 600px 800px 900px 900px 60px; */
+    grid-template-rows: 80px 5fr 5fr 6fr 6fr 60px;
     grid-template-areas: "navbar navbar" "hero hero" "preview1 preview2" "article1 article1" "article2 article2" "footer footer";
     justify-content: center;
     background-color: #f8f8f8;
@@ -93,6 +94,7 @@ li.active {
 .hero {
     background: url("../img/yos-valley-2.jpg") center center no-repeat;
     margin-bottom: 30px;
+    min-height: 600px;
 }
 
 .hero-txt {
@@ -106,10 +108,12 @@ li.active {
     color: #916900;
     border: 3px solid #916900;
     /* background-color: rgba(139,108,83, .6); */
-    background-image: linear-gradient(rgba(240,240,240,0.8), rgba(139,108,83, .4));
+    background-image: linear-gradient(rgba(240,240,240,0.9), rgba(139,108,83, .6));
     /* border-radius: 50%; */
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .hero-txt h1 {
