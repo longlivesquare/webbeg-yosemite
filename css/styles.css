@@ -104,23 +104,13 @@ li.active {
     justify-self: center;
     margin-bottom: 20%;
     padding: 0 20px;
-    text-align: center;
-    color: #916900;
-    border: 3px solid #916900;
-    /* background-color: rgba(139,108,83, .6); */
-    background-image: linear-gradient(rgba(240,240,240,0.9), rgba(139,108,83, .6));
-    /* border-radius: 50%; */
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
+} 
 
-.hero-txt h1 {
+/* .hero-txt h1 {
     margin-top: 17%;
     font-family: 'Jim Nightshade', sans-serif;
     align-self: center;
-}
+} */
 
 /* PREVIEW */
 
