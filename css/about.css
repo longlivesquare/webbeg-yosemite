@@ -1,0 +1,57 @@
+
+.about-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 80px repeat(4,1fr) 60px;
+}
+
+/* NAVBAR */
+.navbar{
+    grid-column: 1 / span 4;
+    grid-row: 1 / 2;
+}
+
+/* FACTBOXES */
+
+.left{
+    grid-column-start: 1;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+.right{
+    grid-column-start: 2;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+
+.right img {
+    grid-column: 1 / span 1;
+}
+
+.right h3 {
+    grid-column: 3 / span 1;
+}
+
+.right .audo-box {
+    grid-column: 2 / span 1;
+}
+
+.fact-box {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-end: span 3;
+    grid-row-end: span 1;
+    max-height: 400px;
+    background-color: rgba(227,196,175,0.8);
+    align-items: center;
+}
+
+.fact-img {
+    height: 90%;
+}
+
+/* FOOTER */
+
+.footer {
+    grid-column: 1 / span 4;
+    grid-row: 7/ span 1;
+}
