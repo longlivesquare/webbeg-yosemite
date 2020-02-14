@@ -17,8 +17,7 @@
 
 .left{
     grid-column: 1 / span 3;
-    border-top-right-radius: 200px;
-    border-bottom-right-radius: 200px;
+    border-radius: 0 50px 50px 0;
     justify-items: right;
 }
 
@@ -29,8 +28,7 @@
 
 .right{
     grid-column: 2 / span 3;
-    border-top-left-radius: 200px;
-    border-bottom-left-radius: 200px;
+    border-radius: 50px 0 0 50px;
     justify-items: left;
 }
 
@@ -50,11 +48,9 @@
 .fact-box {
     grid-template-columns: repeat(3, 1fr);
     grid-row-end: span 1;
-    min-height: 300px;
     background-color: rgba(227,196,175,0.8);
     align-items: center;
     border: 2px solid #916900;
-    overflow: auto;
 }
 
 .fact-box h2 {
@@ -66,11 +62,12 @@
 }
 
 .fact-img {
-    height: 100%;
+    border-radius: 30px;
+    height: 300px;
 }
 
 .audio-box iframe {
-    border-radius: 10px;;
+    border-radius: 20px;;
 }
 
 /* FOOTER */
@@ -95,7 +92,6 @@
 
     .fact-box {
         grid-template-columns: 1fr;
-        height: 600px;
         align-items: center;
         justify-items: center;    
     }

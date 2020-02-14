@@ -59,14 +59,14 @@
 
 .logo {
     grid-column: 1 / span 1;
-    height: 90%;
+    height: 70px;
     margin-left: 1vw;
 }
 
 .nav {
     grid-column: 3 / span 1;
     justify-self: flex-end;
-    align-self: flex-end;
+    align-self: end;
     list-style-type: none;
 }
 
