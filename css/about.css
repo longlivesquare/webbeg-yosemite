@@ -63,8 +63,8 @@
     height: 100%;
 }
 
-audio {
-    color: #916900;
+.audio-box iframe {
+    border-radius: 10px;;
 }
 
 
