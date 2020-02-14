@@ -1,0 +1,77 @@
+
+.about-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 80px repeat(4,1fr) 60px;
+    background: url("../img/forest.webp") center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* NAVBAR */
+.navbar{
+    grid-column: 1 / span 4;
+    grid-row: 1 / 2;
+}
+
+/* FACTBOXES */
+
+.left{
+    grid-column-start: 1;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    justify-items: right;
+}
+
+.left .facts {
+    padding-left: 8px;
+}
+
+
+.right{
+    grid-column-start: 2;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    justify-items: left;
+}
+
+.right .fact-img {
+    order: 0
+}
+
+.right .audio-box {
+    order: 1
+}
+
+.right .facts {
+    order: 2
+}
+
+
+.fact-box {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-end: span 3;
+    grid-row-end: span 1;
+    height: 300px;
+    background-color: rgba(227,196,175,0.8);
+    align-items: center;
+    border: 2px solid #916900;
+    overflow: hidden;
+
+}
+
+.fact-img {
+    height: 100%;
+}
+
+.audio-box iframe {
+    border-radius: 10px;;
+}
+
+
+
+/* FOOTER */
+
+.footer {
+    grid-column: 1 / span 4;
+    grid-row: 6/ span 1;
+}
