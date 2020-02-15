@@ -1,0 +1,118 @@
+address {
+    grid-area: address;
+}
+
+iframe {
+    grid-area: map;
+}
+
+.form {
+    grid-area: form;
+}
+
+.contact-page {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "navbar navbar" "address map" "form form" "footer footer";
+    background: url("../img/halfdome-glacier.webp") center no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+
+address {
+    justify-self: center;
+    align-self: center;
+    background-color: #916900;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+address h3 {
+    font-family: 'Jim Nightshade', cursive;
+}
+
+iframe {
+    border-radius: 8px;
+    margin-top: 15px;
+    justify-self: start;
+}
+
+/* FORM */
+
+.form {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 3fr 60px;
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    justify-self: center;
+    background-color: rgba(227,196,175,0.8);;
+    border: 2px solid #916900;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.nameImp {
+    grid-column: 1 / 2;
+}
+
+.emailInp {
+    grid-column: 2 / 3;
+}
+
+.topicInp {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+textarea {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.submitBtn {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    width: 50px;
+    height: 30px;
+    justify-self: end;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-page {
+        grid-template-areas: "navbar navbar" "address address" "map map" "form form" "footer footer";
+        justify-content: center;
+    }
+
+    iframe {
+        justify-self: center;
+    }
+
+    .form {
+        grid-template-rows: 1fr 1fr 1fr 3fr 60px;
+        width: 100%;
+    }
+
+    .nameImp {
+        grid-column: 1 / span 2;
+    }
+
+    .emailInp {
+        grid-column: 1 / span 2;
+    }
+
+    .topicInp {
+        grid-column: 1 / span 2;
+    }
+
+    textarea {
+        grid-row: 4 / 5;
+        
+    }
+
+    .submitBtn {
+        grid-row: 5 / 6;
+    }
+}
