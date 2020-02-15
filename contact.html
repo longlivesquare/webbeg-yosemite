@@ -3,11 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us!</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
-    
+    <div class="contact-page grid">
+        <!-- NAVBAR START -->
+        <header class="grid navbar">
+        <img src="img/half-dome-logo.png" alt="logo of half dome" class="logo">
+        <ul class="nav">
+            <li class="navitem"><a href="index.html">Home</a></li>
+            <li class="navitem"><a href="about.html">About</a></li>
+            <li class="navitem active"><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </header>
+        <!-- NAVBAR END -->
+        <!-- ADDRESS START -->
+        <address>
+            <h3>Come by and visit us at:</h3>
+            8308 Wawona Rd <br> 
+            Yosemite Valley, CA 95389
+        </address>
+        <!-- ADDRESS END -->
+        <!-- MAP START -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d74583.3661364702!2d-119.63971308407694!3d37.71018403010974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8096f3eabdb1c0a3%3A0xa3a5442cc2ec7a64!2sHalf%20Dome!5e0!3m2!1sen!2sus!4v1581741801713!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <!-- MAP END -->
+        <!-- FORM START -->
+        <form class="form grid">
+            <div class="nameInp">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" placeholder="J. Doe">
+            </div>
+            <div class="emailInp">
+                <label for="email">E-mail</label><br>
+                <input type="text" id="email" placeholder="So we can contact you">
+            </div>
+            <div class="topicInp">
+                <label for="topic">Topic</label><br>
+                <input type="text" id="topic" placeholder="How can we help you">
+            </div>
+            <textarea name="message" id="message" rows="10" placeholder="Put your message here."></textarea>
+            <input class="submitBtn" type="submit" value="Submit">
+        </form>
+        <!-- FORM END -->
+        <!-- FOOTER START -->
+        <footer class="footer grid">
+        <div class="search">
+            <input type="text"><input type="button" value="Search">
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/steven.duran"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://github.com/longlivesquare"><i class="fab fa-github-square"></i></a>
+            <a href="https://www.linkedin.com/in/steven-duran-b9548525/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="copy">
+            <p>&copy; Steven Duran. All rights reserved</p>
+        </div>
+        </footer>
+        <!-- FOOTER END -->
+    </div>
 </body>
 </html>
