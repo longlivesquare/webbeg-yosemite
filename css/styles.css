@@ -154,7 +154,7 @@ li.active {
 .article {
     grid-template-columns: 1fr 1fr;
     align-content: center;
-    min-height: 800px;
+    min-height: 850px;
     color: #8B6C00;
     text-shadow: 1px -1px #f8f8f8;
 }
@@ -162,7 +162,8 @@ li.active {
 /* FOOTER */
 
 .footer {
-    height: 60px;
+    height: 80px;
+    width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
     justify-items: center;

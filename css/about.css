@@ -1,7 +1,7 @@
 
 .about-container {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 80px repeat(4,1fr) 60px;
+    /* grid-template-rows: 80px repeat(4,1fr) 60px; */
     background: url("../img/forest.webp") center no-repeat;
     background-size: cover;
     background-attachment: fixed;
