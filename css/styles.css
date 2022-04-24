@@ -139,6 +139,7 @@ li.active {
 .article1 {
     margin-top: 20px;
     background: url("../img/yos-half-dome.webp") center no-repeat;
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -148,6 +149,7 @@ li.active {
 
 .article2 {
     background: url("../img/yos-el-cap.webp") center no-repeat;
+    background-size: cover;
     background-attachment: fixed;
 }
 
